@@ -55,11 +55,13 @@ font-weight: 100}
 
 header h1:after {
 content: " ";
-background-image: url('../images/chrome/globe.svg'); /*change to the diamond*/
 width: 20px;
 height: 20px;
+width: 1.2vw;
+height: 1.2vw;
 display: inline-block;
-background-repeat: no-repeat}
+background-color: red;
+margin-left: .05em}
 
 header h2 {
 font-size: 2.2em;
@@ -81,11 +83,50 @@ font-family: "Freight-Sans-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-seri
 font-weight: 100
 }
 
-/*tagline*/
+/*page nav*/
 
-#tagline h2 {
-font-family: inherit;
-font-size: 2.2em;
-font-size: 3vw;
-color: 
+nav#page {
+	padding: .5em 8% 1em 8%
 }
+
+nav#page li {
+display: inline-block;
+width: 8%;
+text-align: right}
+
+nav#page li:first-child {width: 60%;
+text-align: left}
+
+nav#page a:link, nav#page a:visited {
+	text-decoration: none;
+	color: #000;
+	font-weight: 500
+}
+
+nav#page li:first-of-type a:link {
+	color: #50347d;
+		font-family: "Freight-Micro-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
+	font-size: 2.6em;
+	font-weight: 100
+}
+
+nav#page li:first-of-type a:after {
+content: " ";
+width: 6px;
+height: 6px;
+width: .4vw;
+height: .4vw;
+display: inline-block;
+background-color: red;
+margin-left: .05em}
+
+
+nav#page li:last-of-type a:link, nav#page li:last-of-type a:visited {
+	color: #50347d;
+}
+
+/*main*/
+
+.part {
+padding-left: 8%;
+padding-right: 8% }
