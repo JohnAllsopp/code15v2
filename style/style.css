@@ -90,32 +90,34 @@ font-weight: 100;
 
 /*page nav*/
 
-nav#page {
-	padding: .5em 8% 1em 8%
+nav.page {
+	padding: .5em 8% 1em 8%;
+	width: 84%;
+	background-color: #fff
 }
 
-nav#page li {
+nav.page li {
 display: inline-block;
 width: 8%;
 text-align: right}
 
-nav#page li:first-child {width: 60%;
+nav.page li:first-child {width: 60%;
 text-align: left}
 
-nav#page a:link, nav#page a:visited {
+nav.page a:link, nav.page a:visited {
 	text-decoration: none;
 	color: #000;
 	font-weight: 500
 }
 
-nav#page li:first-of-type a:link {
+nav.page li:first-of-type a:link {
 	color: #50347d;
 		font-family: "Freight-Micro-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
 	font-size: 2.6em;
 	font-weight: 100
 }
 
-nav#page li:first-of-type a:after {
+nav.page li:first-of-type a:after {
 content: " ";
 width: 6px;
 height: 6px;
@@ -126,7 +128,7 @@ background-color: red;
 margin-left: .05em}
 
 
-nav#page li:last-of-type a:link, nav#page li:last-of-type a:visited {
+nav.page li:last-of-type a:link, nav.page li:last-of-type a:visited {
 	color: #50347d;
 }
 
@@ -230,7 +232,7 @@ width: 100%}
 }
 
 .session .title {
-display: inline-block;
+display: inline;
 position: absolute;
 bottom: 15%;
 left: 5%;
@@ -240,10 +242,10 @@ font-size: 1.2em;
 width: 85%;
 margin: 0 auto;
 font-size: 1.3em;
--webkit-background-clip: border-box;
--webkit-background-origin: padding-box;
--webkit-background-size: auto;
-
+background-attachment: scroll;
+background-clip: border-box;
+background-image: none;
+background-origin: padding-box;
 }
 
 .session .name {
@@ -258,3 +260,20 @@ width: 85%;
 margin: 0 auto;
 font-family: "Freight-Micro-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
 font-weight: 100}
+
+
+/*pricing*/
+
+#register h2 {
+	font-size: 3em;
+	line-height: 1
+}
+
+#register td {
+width: 23.3%;
+vertical-align: top
+}
+
+#register td:first-of-type {
+	width: 30%
+}
