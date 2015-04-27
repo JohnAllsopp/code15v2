@@ -1,6 +1,9 @@
 body {
 font: 400 16px/1.5 "Freight-Sans-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;}
 
+strong {
+font-weight: 600}
+
 h1, h2 {
 font-family: "Freight-Micro-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
 font-size: 56px;
@@ -20,7 +23,7 @@ nav#site ul li{
 	display: inline-block;
 	width: auto;
 	margin-right: 1em;
-		font-weight: 500
+	font-weight: 500
 
 }
 
@@ -44,6 +47,7 @@ color: #50347d}
 
 body > header {
 background-color: #50347d;
+padding-bottom: 4em
 }
 
 header h1 {
@@ -80,7 +84,8 @@ font-size: 1.8vw;
 color: #fff;
 text-align: center;
 font-family: "Freight-Sans-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
-font-weight: 100
+font-weight: 100;
+
 }
 
 /*page nav*/
@@ -125,8 +130,65 @@ nav#page li:last-of-type a:link, nav#page li:last-of-type a:visited {
 	color: #50347d;
 }
 
+/*need page navigation to be sticky*/
+
+
 /*main*/
 
 .part {
 padding-left: 8%;
-padding-right: 8% }
+padding-right: 8%;
+overflow: auto}
+
+.part p, .part ul {
+margin-bottom: 1em}
+
+/* overview */
+
+#overview h2 {
+	color: #50347d;
+	font-family: "Freight-Sans-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
+	font-size: 1.8em;
+	font-weight: 100;
+	line-height: 1;
+	width: 52%;
+	padding-right: 6%;
+	margin-bottom: 1em;
+	float: left
+}
+
+#overview h3 {
+font-size: .9em;
+color: #50347d
+margin-top: 2.6em}
+
+#overview > p:first-of-type {
+	width: 52%;
+	padding-right: 6%;
+font-size: 1.25em;
+line-height: 1.2;
+	float: left
+
+}
+
+#overview section:nth-of-type(odd) {
+	width: 52%;
+	padding-right: 6%;
+margin-top: 2.2em;
+float: left}
+
+#overview section:nth-of-type(even) {
+	width: 38%;
+margin-top: 2.2em;
+float: right;
+font-size: .9em;
+color: #676767}
+
+#overview section:nth-of-type(even) h3 { 
+font-variant: small-caps;
+text-transform: uppercase;
+color: #676767}
+
+#overview li:before {
+	content: '–'
+}
