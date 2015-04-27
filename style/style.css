@@ -1,0 +1,33 @@
+body {
+font: 400 16px/1.5em "Freight-Sans-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif}
+
+h1, h2 {
+font-family: "Freight-Micro-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
+font-size: 56px;
+font-weight: 300
+}
+
+h1, h2, h3, h4, h5, h6 {
+color: #50347d
+}
+
+nav#site {
+
+}
+
+
+nav#site ul li{
+	display: inline-block;
+	width: auto;
+	margin-right: 2em;
+		font-weight: 600
+
+}
+
+nav#site ul li:first-of-type {
+width: 50%}
+
+nav#site ul li a:link, nav#site ul li a:visited {
+	color: #000;
+	text-decoration: none;
+}
