@@ -1,5 +1,5 @@
 body {
-font: 400 16px/1.5em "Freight-Sans-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif}
+font: 400 16px/1.5 "Freight-Sans-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;}
 
 h1, h2 {
 font-family: "Freight-Micro-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
@@ -41,3 +41,51 @@ color: #676767}
 color: #50347d}
 
 /*header*/
+
+body > header {
+background-color: #50347d;
+}
+
+header h1 {
+font-size: 10em;
+font-size: 24vw;
+color: #fff;
+text-align: center;
+font-weight: 100}
+
+header h1:after {
+content: " ";
+background-image: url('../images/chrome/globe.svg'); /*change to the diamond*/
+width: 20px;
+height: 20px;
+display: inline-block;
+background-repeat: no-repeat}
+
+header h2 {
+font-size: 2.2em;
+font-size: 3vw;
+color: #fff;
+text-align: center;
+font-family: "Freight-Sans-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif
+}
+
+header h2 strong {
+font-weight: 900}
+
+header h3 {
+font-size: 1.3em;
+font-size: 1.8vw;
+color: #fff;
+text-align: center;
+font-family: "Freight-Sans-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
+font-weight: 100
+}
+
+/*tagline*/
+
+#tagline h2 {
+font-family: inherit;
+font-size: 2.2em;
+font-size: 3vw;
+color: 
+}
