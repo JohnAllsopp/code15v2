@@ -17,35 +17,27 @@ var shower = {
 			detailLinks[i].addEventListener('click', shower.showDetails, false)
 		};
 
-		return;
+		var previousButtons = document.querySelectorAll(".previous");
 		
-		var bioLinks = document.querySelectorAll(".session .name");
-		
-		for (var i=0; i < bioLinks.length; i++) {
-			bioLinks[i].addEventListener('click', shower.showBio, false)
+		for (var i=0; i < previousButtons.length; i++) {
+			previousButtons[i].addEventListener('click', shower.showPrevious, false)
 		};
 
+		var nextButtons = document.querySelectorAll(".next");
+		
+		for (var i=0; i < nextButtons.length; i++) {
+			nextButtons[i].addEventListener('click', shower.showNext, false)
+		};
+		
+		var closeButtons = document.querySelectorAll(".closebox");
+		
+		for (var i=0; i < previousButtons.length; i++) {
+			closeButtons[i].addEventListener('click', shower.hideLastShown, false)
+		};
+		
 
 	},
 	
-	showDetails1: function(evt){
-		//show the details associated with the passed element
-		
-		shower.hideLastShown()
-		
-		var grandparent = evt.target.parentElement.parentElement
-		var detailElement = grandparent.querySelector(".description")
-		
-		if(detailElement){
-			detailElement.classList.add('showing')
-			shower.lastShown = detailElement
-		}
-		
-		evt.stopPropagation()
-		
-		
-	},
-
 	showDetails: function(evt){
 		//show the details associated with the passed element
 		
@@ -60,6 +52,18 @@ var shower = {
 		
 		evt.stopPropagation()
 		
+		
+	},
+	
+	showPrevious: function(evt) {
+	
+	//show the previous details
+		
+	},
+
+	showNext: function(evt) {
+	
+	//show the next details
 		
 	},
 
@@ -77,8 +81,6 @@ var shower = {
 		}
 		
 		evt.stopPropagation()
-		
-
 		
 	},
 	
