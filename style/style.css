@@ -24,18 +24,23 @@ nav#site ul li{
 	width: auto;
 	margin-right: 1em;
 	font-weight: 500
-
 }
 
 nav#site ul li:first-of-type {
 width: 50%;
 padding-left: 2em;
-font-weight: 900}
+font-weight: 900;
+background-image: url('../images/chrome/wdlogo.svg');
+background-repeat: no-repeat;
+background-size: 1em;
+padding-left: 2.5em;
+background-position: 1em 50%}
 
 nav#site ul li a:link, nav#site ul li a:visited {
 	color: inherit;
 	text-decoration: none;
 }
+
 
 .past {
 color: #676767}
@@ -46,8 +51,11 @@ color: #50347d}
 /*header*/
 
 body > header {
-background-color: #50347d;
-padding-bottom: 4em
+/* background-color: #50347d;*/
+padding-bottom: 4em;
+background-image: url('../images/chrome/header-gradient.jpg');
+background-repeat: no-repeat;
+background-size: 100% auto 
 }
 
 header h1 {
@@ -93,7 +101,8 @@ font-weight: 100;
 nav.page {
 	padding: .5em 8% 1em 8%;
 	width: 84%;
-	background-color: #fff
+	background-color: #fff;
+	z-index: 10
 }
 
 nav.page li {
@@ -102,7 +111,8 @@ width: 8%;
 text-align: right}
 
 nav.page li:first-child {width: 60%;
-text-align: left}
+text-align: left;
+}
 
 nav.page a:link, nav.page a:visited {
 	text-decoration: none;
@@ -153,7 +163,7 @@ margin-bottom: 1em}
 	color: #50347d;
 	font-family: "Freight-Sans-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
 	font-size: 1.8em;
-	font-weight: 100;
+	font-weight: 500;
 	line-height: 1;
 	width: 52%;
 	padding-right: 6%;
@@ -227,39 +237,46 @@ margin-bottom: 1em
 .session img {
 width: 100%}
 
-.session .summary {
+.session {
 	position: relative;
 }
+
 
 .session .title {
 display: inline;
 position: absolute;
 bottom: 15%;
 left: 5%;
-background-color: #fff;
-color: #e50252;
-font-size: 1.2em;
 width: 85%;
 margin: 0 auto;
-font-size: 1.3em;
-background-attachment: scroll;
-background-clip: border-box;
-background-image: none;
-background-origin: padding-box;
+font-size: 1.5em;
+font-size: 2.3vw;
+line-height: 1.5
+}
+
+.title span {
+	background-color: #fff;
+	color: #e50252;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-origin: padding-box;
+	padding: 0 .2em
 }
 
 .session .name {
 display: inline-block;
 position: absolute;
-bottom: 2%;
+bottom: 4%;
 left: 5%;
 background-color: #000;
 color: #fff;
-font-size: 1.2em;
 width: 85%;
 margin: 0 auto;
 font-family: "Freight-Micro-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
-font-weight: 100}
+font-weight: 100;
+font-size: 1.1em;
+font-size: 1.6vw;
+}
 
 
 /*pricing*/
