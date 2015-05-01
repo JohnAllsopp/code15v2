@@ -431,7 +431,14 @@ margin-top: 2.5em
 
 #register table {
 	border-collapse: separate;
-  border-spacing: 50px 0;
+  	border-spacing: 20px 0;
+  	width: 100%
+
+}
+
+#register td:nth-of-type(2) {
+		border-collapse: separate;
+	  	border-spacing: 50px 0;
 
 }
 
@@ -445,6 +452,27 @@ padding-top: 1.5%
 
 #register tr:first-of-type td {
 	padding-top: 3%
+}
+
+
+#register tr:first-of-type td:nth-of-type(1) {
+	border-top: solid .2em rgb(215, 219, 226)
+}
+
+#register tr:first-of-type td:nth-of-type(2) {
+	border-top: solid .2em #dc982c
+}
+
+#register tr:first-of-type td:nth-of-type(3) {
+	border-top: solid .2em #5c5f71
+}
+
+#register tr:first-of-type td:nth-of-type(4) {
+	border-top: solid .2em #4f7c62
+}
+
+#register tr:last-of-type td:nth-of-type(1), #register tr:last-of-type td:nth-of-type(2), #register tr:last-of-type td:nth-of-type(3), #register tr:last-of-type td:nth-of-type(4) {
+/*	border-bottom: solid .2em rgb(215, 219, 226)*/
 }
 
 #register h3 {
@@ -480,11 +508,11 @@ padding-top: 1.5%
 
 /*#register td:nth-last-child(4) > h4*/
 
-#register td h4 {
+#register h4 {
 	color: #000;
 	text-transform: uppercase;
 	font-variant: small-caps;
-	font-weight: 500
+	font-weight: 600
 }
 
 
@@ -558,4 +586,70 @@ color: #000}
 
 #register tr:nth-of-type(5) td, #register tr:last-of-type td {
 	border: none
+}
+
+/*workshop*/
+
+#workshop {
+	margin-top: 4em;
+
+}
+
+#workshop h2 {
+margin-left: 0;
+margin-right: 20px;
+padding-top: 20px;
+width: 30%;
+float: left;
+line-height: 1;
+font-size: 2.7em;
+font-size: 4vw;
+border-top: solid  rgb(215, 219, 226) 4px
+}
+
+#workshop-details {width: 68%;
+float: left;
+border-top: solid  rgb(215, 219, 226) 4px;
+padding-top: 16px}
+
+
+#workshop-details img {
+	
+	width: 20%;
+	float: right;
+	margin-left: 4%
+	
+}
+
+#workshop-takeaways {width: 30%;
+float: right}
+
+#workshop-details a:link, #workshop-details a:visited {
+	text-decoration: none;
+	background-color: #a799be;
+	color: #fff;
+	font-variant: small-caps;
+	text-transform: uppercase;
+	font-size: .9em;
+	padding: .4em .4em;
+	display: inline-block;
+	margin: .5em 0
+} 
+
+#workshop-learnings {
+	width: 58%;
+	float: left;
+	margin-right: 6%;
+}
+
+#workshop-takeaways {
+	width: 34%;
+	float: left;
+}
+
+#workshop h3 {
+	font-variant: small-caps;
+	text-transform: uppercase;
+	font-size: .9em;
+	color: #000
 }

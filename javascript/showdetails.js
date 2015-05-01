@@ -3,6 +3,30 @@
 
 //"use strict"
 
+if (!Array.prototype.indexOf)
+{
+  Array.prototype.indexOf = function(elt /*, from*/)
+  {
+    var len = this.length;
+
+    var from = Number(arguments[1]) || 0;
+    from = (from < 0)
+         ? Math.ceil(from)
+         : Math.floor(from);
+    if (from < 0)
+      from += len;
+
+    for (; from < len; from++)
+    {
+      if (from in this &&
+          this[from] === elt)
+        return from;
+    }
+    return -1;
+  };
+}
+
+
 var shower = {
 	
 	lastShown: null, //last element shown
@@ -55,15 +79,67 @@ var shower = {
 		
 	},
 	
-	showPrevious: function(evt) {
+	showPrevious: function(event) {
 	
 	//show the previous details
+	
+	//var currentSpeaker = evt.target.parentElement.parentElement.parentElement.parentElement
 		
+		
+	var currentSpeakerElement = event.currentTarget.parentElement.parentElement.parentElement
+	var allSpeakerElements = Array.prototype.slice.call(document.querySelectorAll('.vevent.session'));
+	if (currentSpeakerElement) {
+		var currentSpeakerIndex = allSpeakerElements.indexOf(currentSpeakerElement);
+		
+		if (currentSpeakerIndex === 0) {
+			var nextSpeakerElement = allSpeakerElements[allSpeakerElements.length]
+		}
+		
+		else if (currentSpeakerIndex !== -1 ) {
+			var nextSpeakerElement = allSpeakerElements[currentSpeakerIndex - 1]
+		}
+	
+		nextSpeakerElement.querySelector('.description').classList.add("showing")
+		currentSpeakerElement = currentSpeakerElement.querySelector('.description').classList.remove("showing")
+	
+	}
+	
+	event.stopPropagation()
+
 	},
 
-	showNext: function(evt) {
+	showNext: function(event) {
 	
 	//show the next details
+	
+	var currentSpeakerElement = event.currentTarget.parentElement.parentElement.parentElement
+	var allSpeakerElements = Array.prototype.slice.call(document.querySelectorAll('.vevent.session'));
+	if (currentSpeakerElement) {
+		var currentSpeakerIndex = allSpeakerElements.indexOf(currentSpeakerElement);
+		
+		if (currentSpeakerIndex === allSpeakerElements.length) {
+			var nextSpeakerElement = allSpeakerElements[0]
+		}
+		
+		else if (currentSpeakerIndex !== -1 ) {
+			var nextSpeakerElement = allSpeakerElements[currentSpeakerIndex + 1]
+		}
+	
+		// nextSpeakerElement.querySelector(".speaker-more").classList.add("pause-transition")
+		// nextSpeakerElement.querySelector(".speaker-more").classList.remove("pause-transition")
+
+		var currentSpeakerMore = currentSpeakerElement.querySelector(".description")
+		// currentSpeakerMore.classList.add("pause-transition")
+		currentSpeakerMore.classList.remove("showing")
+		// currentSpeakerMore.classList.remove("pause-transition")
+
+		nextSpeakerElement.querySelector(".description").classList.add("showing")
+
+	
+	}
+	
+	event.stopPropagation()
+	
 		
 	},
 
@@ -90,8 +166,24 @@ var shower = {
 			shower.lastShown = null
 		}
 		
+	},
+	
+	swallowEvent: function(evt){
+		evt.stopPropagation()
 	}
 	
 }
 
-document.addEventListener('click',shower.hideLastShown, false)
+var lightboxes = document.querySelectorAll('.lightbox')
+
+for (var i=0; i < lightboxes.length; i++) {
+	lightboxes[i].addEventListener('click', shower.swallowEvent, false)
+};
+
+
+var descriptions = document.querySelectorAll('.description')
+
+for (var i=0; i < descriptions.length; i++) {
+	descriptions[i].addEventListener('click', shower.hideLastShown, false)
+};
+
