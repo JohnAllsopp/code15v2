@@ -719,6 +719,8 @@ float: right}
 #venue {
 	background-image: url('../images/chrome/venue.jpg');
 	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-color: #1d4fa8;
 	padding: 3em 8%
 }
 
@@ -726,4 +728,56 @@ float: right}
 #venue > * {
 	width: 40%;
 	color: #fff
+}
+
+/*about*/
+
+#about {	
+	margin-top: 3em;
+}
+
+#aboutus {
+	width:60%;
+	float: left
+}
+
+#johnallsopp {
+	width:38%;
+	float: right;
+	font-size: .9em
+}
+
+#johnallsopp h3 {
+	font-variant: small-caps;
+	text-transform: uppercase;
+	font-size: .9em;
+	color: #676767
+}
+
+/*partners*/
+
+#partner-details {
+	width: 30%;
+	float: left
+}
+
+#our-partners {
+	width: 64%;
+	float: right
+}
+
+.major-partner img {
+	width: 50%
+}
+
+#our-partners h3 {
+	font-variant: small-caps;
+	text-transform: uppercase;
+	font-size: .9em;
+	color: #676767
+}
+
+.community-partner {
+	width: 32%;
+	float: left
 }
