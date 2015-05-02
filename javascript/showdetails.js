@@ -101,6 +101,8 @@ var shower = {
 	
 		nextSpeakerElement.querySelector('.description').classList.add("showing")
 		currentSpeakerElement = currentSpeakerElement.querySelector('.description').classList.remove("showing")
+		
+		shower.lastShown = nextSpeakerElement.querySelector('.description')
 	
 	}
 	
@@ -133,7 +135,9 @@ var shower = {
 		currentSpeakerMore.classList.remove("showing")
 		// currentSpeakerMore.classList.remove("pause-transition")
 
-		nextSpeakerElement.querySelector(".description").classList.add("showing")
+		nextSpeakerElement.querySelector(".description").classList.add("showing");
+		
+		shower.lastShown = nextSpeakerElement.querySelector(".description")
 
 	
 	}

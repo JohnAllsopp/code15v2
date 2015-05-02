@@ -615,7 +615,7 @@ font-size: 4vw;
 border-top: solid  rgb(215, 219, 226) 4px
 }
 
-#workshop-details {width: 68%;
+#workshop-details {width: 67%;
 float: left;
 border-top: solid  rgb(215, 219, 226) 4px;
 padding-top: 16px}
@@ -671,6 +671,7 @@ float: right}
 #pricing-more h2 {
 	margin-left: 0;
 	margin-right: 20px;
+
 	padding-top: 20px;
 	width: 30%;
 	float: left;
@@ -695,7 +696,8 @@ float: right}
 #pricing-more h3 {
 	font-family: "Freight-Micro-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
 	font-size: 1.6em;
-	color: #e50252
+	color: #e50252;
+		padding-bottom: 1em;
 }
 
 #pricing-more  li:before {
@@ -714,11 +716,15 @@ float: right}
 	color: #e50252
 }
 
+#pricing-brief {
+	display: none
+}
+
 /*venue*/
 
 #venue {
 	background-image: url('../images/chrome/venue.jpg');
-	background-size: 100% auto;
+	background-size: cover ;
 	background-repeat: no-repeat;
 	background-color: #1d4fa8;
 	padding: 3em 8%
@@ -726,7 +732,7 @@ float: right}
 
 
 #venue > * {
-	width: 40%;
+	width: 46%;
 	color: #fff
 }
 
@@ -756,6 +762,10 @@ float: right}
 
 /*partners*/
 
+#our-partners img {
+	width: 100%
+}
+
 #partner-details {
 	width: 30%;
 	float: left
@@ -778,6 +788,7 @@ float: right}
 }
 
 .community-partner {
-	width: 32%;
-	float: left
+	width: 20%;
+	float: left;
+	margin-right: 13%
 }
