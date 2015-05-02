@@ -18,6 +18,13 @@ h1, h2, h3, h4, h5, h6 {
 color: #50347d
 }
 
+
+a:link, a:visited {
+	text-decoration: underline;
+	color: inherit
+}
+
+/*sections*/
 nav#site {
 	padding: 1em 0
 }
@@ -154,7 +161,8 @@ nav.page li:last-of-type a:link, nav.page li:last-of-type a:visited {
 .part {
 padding-left: 8%;
 padding-right: 8%;
-overflow: auto}
+overflow: hidden;
+clear: both}
 
 .part p, .part ul {
 margin-bottom: 1em}
@@ -652,4 +660,70 @@ float: right}
 	text-transform: uppercase;
 	font-size: .9em;
 	color: #000
+}
+
+/*pricing more*/
+
+#pricing-more {
+	margin-top: 3em
+}
+
+#pricing-more h2 {
+	margin-left: 0;
+	margin-right: 20px;
+	padding-top: 20px;
+	width: 30%;
+	float: left;
+	line-height: 1;
+	font-size: 2.7em;
+	font-size: 4vw;
+	border-top: solid  #e50252 4px	;
+	color:#e50252
+}
+
+#pricing-teams, #pricing-eofy {
+	width: 32%;
+	float: left;
+	padding-top: 20px;
+	border-top: solid  #e50252 4px;
+}
+
+#pricing-eofy {
+	margin-left: 3%
+}
+
+#pricing-more h3 {
+	font-family: "Freight-Micro-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
+	font-size: 1.6em;
+	color: #e50252
+}
+
+#pricing-more  li:before {
+	content: '–'
+}
+
+#pricing-more  li {
+	line-height: 1.1;
+	margin-bottom: 1em
+}
+
+#pricing-more strong {
+	font-variant: small-caps;
+	text-transform: uppercase;
+	font-size: .9em;
+	color: #e50252
+}
+
+/*venue*/
+
+#venue {
+	background-image: url('../images/chrome/venue.jpg');
+	background-size: 100% auto;
+	padding: 3em 8%
+}
+
+
+#venue > * {
+	width: 40%;
+	color: #fff
 }
