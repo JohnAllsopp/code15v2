@@ -9,6 +9,7 @@
 
 <link rel="stylesheet" href="style/reset.css">
 <link rel="stylesheet" href="style/wide.css" media="(min-width: 800px)">
+	<link rel="stylesheet" href="style/narrow.css" media="(max-width: 799px)">
 </head>
 <body>
 <nav id="site">
@@ -133,7 +134,7 @@
 					<section class="tags"><h3>Tags</h3>
 					<span class="tag">HTML5</span> <span class="tag">JavaScript</span> <span class="tag">Web Platform</span></section>
 					
-								</section> <!-- abstract -->
+				</section> <!-- abstract -->
 			
 					<section class="bio">
 		
@@ -980,7 +981,7 @@
 	
 		function initStickiness() {
 			var elementToStick = document.querySelector(".page");
-			sticker.init(elementToStick, "all and (min-width:601px)")
+			sticker.init(elementToStick, "all and (min-width:1px)")
 
 			//var elementToStick = document.querySelector("body > header");
 			//sticker.init(elementToStick, "all and (min-width:601px)")

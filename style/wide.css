@@ -682,6 +682,10 @@ float: right}
 	color:#e50252
 }
 
+register .more-info {
+	display: none
+}
+
 #pricing-teams, #pricing-eofy {
 	width: 32%;
 	float: left;
@@ -707,6 +711,10 @@ float: right}
 #pricing-more  li {
 	line-height: 1.1;
 	margin-bottom: 1em
+}
+
+#register p {
+	line-height: 1.1
 }
 
 #pricing-more strong {
