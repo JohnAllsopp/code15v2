@@ -116,7 +116,7 @@ nav.page {
 nav.page li {
 display: inline-block;
 width: 16%;
-text-align: right}
+text-align: center}
 
 nav.page li:first-child {width: 30%;
 text-align: left;
@@ -172,7 +172,6 @@ margin-bottom: 1em}
 	font-size: 1.8em;
 	font-weight: 500;
 	line-height: 1;
-	padding-right: 6%;
 	margin-bottom: 1em;
 	float: left
 }
@@ -208,12 +207,158 @@ margin-top: 1.2em;
 	display: none
 }
 
-.abstract p::last-of-type {
+.abstract p:last-of-type {
 	display: none
 }
 
 #speakers h4 {
 	font-family: "Freight-Micro-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
 	font-size: 1.6em;
-	margin-top: 1em
+	margin-top: 1em;
+	line-height: 1.1
+}
+
+.bio > img {
+	width: 30%;
+	float: right;
+	margin: 2%
+}
+
+.bio {
+	margin-top: 1.4em
+}
+
+/*register*/
+
+#register {
+	margin-top: 2em
+}
+
+#register table {
+	display: none
+}
+
+#register h2 {
+	line-height: .9;
+	margin-bottom: .4em;
+	text-align: left
+}
+
+#pricing-brief {text-align: center}
+
+#pricing-brief h3 {
+	
+	font-family: "Freight-Micro-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
+	font-size: 2em;
+}
+
+#pricing-brief h3:nth-of-type(1) {
+		color: #dc982c;
+}
+
+#pricing-brief h3:nth-of-type(2) {
+		color: #5c5f71;
+}
+
+#pricing-brief h3:nth-of-type(3) {
+		color: #4f7c62;
+}
+
+#pricing-brief h4{
+	font-variant: small-caps;
+	text-transform: uppercase;
+	color: #6767676
+}
+
+#pricing-brief li.current {
+	
+}
+
+#register a:link, #register a:visited {
+	text-decoration: none;
+	display: inline-block;
+	padding: .2em .5em;
+	text-transform: uppercase;
+	font-variant: small-caps;
+	font-weight: 400;
+	border-radius: 3px;
+	color: #fff
+}
+
+#register p:nth-of-type(1) a:link, #register p:nth-of-type(1) a:visited {
+		background-color: #dc982c;
+
+}
+#register p:nth-of-type(2) a:link, #register p:nth-of-type(2) a:visited {
+		background-color: #5c5f71;
+
+}
+#register p:nth-of-type(3) a:link, #register p:nth-of-type(3) a:visited {
+		background-color: #4f7c62;
+
+}
+
+#register .current {
+font-size: 1.2em;
+font-weight: 400;
+color: #000}
+
+#register .price {
+	font-size: 1.3em;
+	font-weight: 500
+} 
+
+
+/*workshop*/
+
+#workshop h2 {
+	line-height: 1.1;
+	margin: .5em 0
+}
+
+#workshop img {
+	width: 30%;
+	margin: 2%;
+	float: right
+}
+
+#workshop-details a:link, #workshop-details a:visited {
+	text-decoration: none;
+	background-color: #a799be;
+	color: #fff;
+	font-variant: small-caps;
+	text-transform: uppercase;
+	font-size: .9em;
+	padding: .4em .4em;
+	display: inline-block;
+}
+
+/*pricing-more*/
+
+#pricing-more h2, #pricing-more h3, #pricing-more strong  {
+	color: #e50252
+}
+
+/*venue*/
+
+.major-partner img {
+	width: 70%
+}
+
+#our-partners h3 {
+	font-variant: small-caps;
+	text-transform: uppercase;
+	font-size: .9em;
+	color: #676767;
+	margin-bottom: .6em
+}
+
+.community-partner {
+	width: 25%;
+	float: left;
+	margin-right: 5%
+}
+
+.community-partner img {
+	width: 100%
 }

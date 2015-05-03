@@ -331,7 +331,7 @@ width: 85%;
 	left: 0%;
 	width: 100%;
 	height: 100%;
-	-webkit-transition opacity: .3s;
+	-webkit-transition: opacity: .3s;
 	transition: opacity .3s;
 	background-color: rgba(0, 0, 0, .7);
 	padding: 2%;
@@ -358,11 +358,12 @@ width: 85%;
 	position: fixed;
 	top: 44%;
 	font-size: 3em;
-	color: #fff
+	color: #fff;
+	width: 3%
 }
 
 .previous {
-	left: 12%
+	left: 11%
 }
 
 .next {
@@ -479,10 +480,6 @@ padding-top: 1.5%
 	border-top: solid .2em #4f7c62
 }
 
-#register tr:last-of-type td:nth-of-type(1), #register tr:last-of-type td:nth-of-type(2), #register tr:last-of-type td:nth-of-type(3), #register tr:last-of-type td:nth-of-type(4) {
-/*	border-bottom: solid .2em rgb(215, 219, 226)*/
-}
-
 #register h3 {
 	font-weight: 900;
 	font-size: 1.7em
@@ -513,8 +510,6 @@ padding-top: 1.5%
 		font-size: .9em
 
 }
-
-/*#register td:nth-last-child(4) > h4*/
 
 #register h4 {
 	color: #000;
@@ -582,6 +577,11 @@ font-weight: 100;
 font-size: 1.2em;
 font-weight: 400;
 color: #000}
+
+#register .price {
+	font-size: 1.3em;
+	font-weight: 500
+} 
 
 #register .prices {
 	color: #676767
@@ -671,7 +671,6 @@ float: right}
 #pricing-more h2 {
 	margin-left: 0;
 	margin-right: 20px;
-
 	padding-top: 20px;
 	width: 30%;
 	float: left;
@@ -792,7 +791,8 @@ register .more-info {
 	font-variant: small-caps;
 	text-transform: uppercase;
 	font-size: .9em;
-	color: #676767
+	color: #676767;
+	margin-bottom: .6em
 }
 
 .community-partner {
