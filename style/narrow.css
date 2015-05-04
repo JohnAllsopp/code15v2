@@ -10,9 +10,12 @@ em {
 
 h1, h2 {
 font-family: "Freight-Micro-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
-font-size: 56px;
-font-weight: 300
+font-size: 3em;
+font-weight: 300;
+line-height: 1.1;
 }
+
+h2 {margin: 1.5em 0 .5em 0}
 
 h1, h2, h3, h4, h5, h6 {
 color: #50347d
@@ -85,10 +88,11 @@ margin-left: .05em}
 
 header h2 {
 font-size: 2.2em;
-font-size: 4vw;
+font-size: 6vw;
 color: #fff;
 text-align: center;
-font-family: "Freight-Sans-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif
+font-family: "Freight-Sans-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
+line-height: 1.1
 }
 
 header h2 strong {
@@ -96,7 +100,7 @@ font-weight: 900}
 
 header h3 {
 font-size: 1.3em;
-font-size: 2.8vw;
+font-size: 3.2vw;
 color: #fff;
 text-align: center;
 font-family: "Freight-Sans-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
@@ -115,10 +119,10 @@ nav.page {
 
 nav.page li {
 display: inline-block;
-width: 16%;
-text-align: center}
+width: 23%;
+text-align: right}
 
-nav.page li:first-child {width: 30%;
+nav.page li:first-child {
 text-align: left;
 }
 
@@ -130,21 +134,25 @@ nav.page a:link, nav.page a:visited {
 
 nav.page li:first-of-type a:link {
 	color: #50347d;
-		font-family: "Freight-Micro-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
-	font-size: 2.6em;
+	font-family: "Freight-Micro-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
+	font-size: 1.7em;
 	font-weight: 100
 }
 
-nav.page li:first-of-type a:after {
+/*nav.page li:first-of-type a:after {
 content: " ";
 width: 6px;
 height: 6px;
-width: .4vw;
-height: .4vw;
+width: .8vw;
+height: .8vw;
 display: inline-block;
 background-color: red;
-margin-left: .05em}
+margin-left: .05em}*/
 
+
+nav.page li:nth-of-type(2) {
+	display: none
+}
 
 nav.page li:last-of-type a:link, nav.page li:last-of-type a:visited {
 	color: #50347d;
@@ -361,4 +369,26 @@ color: #000}
 
 .community-partner img {
 	width: 100%
+}
+
+/*footer*/
+
+footer {
+	font-size: .9em;
+	color: #676767;
+	width: 84%;
+	margin: 3em 8% 0 8%;
+}
+
+
+footer h3 {
+	font-variant: small-caps;
+	text-transform: uppercase;
+	font-size: inherit;
+	font-weight: 500
+}
+
+footer > p {
+	clear: both;
+	margin: 2em 0 0 0
 }

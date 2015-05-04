@@ -800,3 +800,34 @@ register .more-info {
 	float: left;
 	margin-right: 13%
 }
+
+/*footer*/
+
+footer {
+	font-size: .9em;
+	color: #676767;
+	width: 84%;
+	margin: 3em 8% 0 8%;
+}
+
+footer > section {
+	width: 56%;
+	float: right
+}
+
+footer > section:first-of-type {
+	width: 40%;
+	float: left
+}
+
+footer h3 {
+	font-variant: small-caps;
+	text-transform: uppercase;
+	font-size: inherit;
+	font-weight: 500
+}
+
+footer > p {
+	clear: both;
+	margin: 2em 0 0 0
+}
