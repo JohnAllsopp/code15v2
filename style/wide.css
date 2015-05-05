@@ -26,7 +26,7 @@ a:link, a:visited {
 
 /*sections*/
 nav#site {
-	padding: 1em 0
+	padding: .4em 0
 }
 
 
@@ -39,13 +39,13 @@ nav#site ul li{
 
 nav#site ul li:first-of-type {
 width: 50%;
-padding-left: 2em;
 font-weight: 900;
 background-image: url('../images/chrome/wdlogo.svg');
 background-repeat: no-repeat;
 background-size: 1em;
 padding-left: 2.5em;
-background-position: 1em 50%}
+background-position: 1em 50%;
+margin-left: 1em}
 
 nav#site ul li a:link, nav#site ul li a:visited {
 	color: inherit;
@@ -56,13 +56,28 @@ nav#site ul li a:link, nav#site ul li a:visited {
 .past {
 color: #676767}
 
-.current {
-color: #50347d}
+nav#site ul li.current {
+color: #50347d;
+font-weight: 600;
+position: relative
+}
+
+/*nav#site ul li.current:after {
+	width: .5em;
+	height: .5em;
+	background-color: #f#f00;
+	position: absolute;
+	top: 0%;
+	z-index: 10;
+	left: 0;
+	content: ' '
+}*/
 
 /*header*/
 
 body > header {
 /* background-color: #50347d;*/
+padding-top: 4em;
 padding-bottom: 4em;
 background-image: url('../images/chrome/header-gradient.jpg');
 background-repeat: no-repeat;
@@ -74,24 +89,27 @@ font-size: 10em;
 font-size: 24vw;
 color: #fff;
 text-align: center;
-font-weight: 100}
+font-weight: 100;
+line-height: 1;}
 
 header h1:after {
 content: " ";
 width: 20px;
 height: 20px;
-width: 1.2vw;
-height: 1.2vw;
+width: 1.4vw;
+height: 1.4vw;
 display: inline-block;
-background-color: red;
-margin-left: .05em}
+background-color: #DF003F;
+margin-top: .5%;
+margin-left: .5%}
 
 header h2 {
 font-size: 2.2em;
 font-size: 3vw;
 color: #fff;
 text-align: center;
-font-family: "Freight-Sans-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif
+font-family: "Freight-Sans-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
+line-height: 1
 }
 
 header h2 strong {
@@ -104,13 +122,13 @@ color: #fff;
 text-align: center;
 font-family: "Freight-Sans-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
 font-weight: 100;
-
+line-height: 1.1
 }
 
 /*page nav*/
 
 nav.page {
-	padding: .5em 8% 1em 8%;
+	padding: .6em 8% 1.5em 8%;
 	width: 84%;
 	background-color: #fff;
 	z-index: 10
@@ -118,7 +136,7 @@ nav.page {
 
 nav.page li {
 display: inline-block;
-width: 8%;
+width: 9%;
 text-align: right}
 
 nav.page li:first-child {width: 60%;
@@ -128,7 +146,8 @@ text-align: left;
 nav.page a:link, nav.page a:visited {
 	text-decoration: none;
 	color: #000;
-	font-weight: 500
+	font-weight: 600;
+	font-size: 1.1em
 }
 
 nav.page li:first-of-type a:link {
@@ -145,8 +164,10 @@ height: 6px;
 width: .4vw;
 height: .4vw;
 display: inline-block;
-background-color: red;
-margin-left: .05em}
+background-color: #DF003F;
+margin-top: .75%;
+margin-left: .25%}
+
 
 
 nav.page li:last-of-type a:link, nav.page li:last-of-type a:visited {
@@ -157,6 +178,10 @@ nav.page li:last-of-type a:link, nav.page li:last-of-type a:visited {
 
 
 /*main*/
+
+main {
+	font-size: 1.1em
+}
 
 .part {
 padding-left: 8%;
@@ -169,13 +194,13 @@ margin-bottom: 1em}
 
 /* overview */
 
-#overview { padding-bottom: 6em}
+#overview { padding-bottom: 14em}
 
 #overview h2 {
 	color: #50347d;
 	font-family: "Freight-Sans-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
 	font-size: 1.8em;
-	font-weight: 500;
+	font-weight: 600;
 	line-height: 1;
 	width: 52%;
 	padding-right: 6%;
@@ -186,7 +211,7 @@ margin-bottom: 1em}
 #overview h3 {
 font-size: .9em;
 color: #50347d;
-margin-top: 2.6em}
+margin-top: .4em}
 
 #overview > p:first-of-type {
 	width: 52%;
@@ -200,15 +225,16 @@ line-height: 1.2;
 #overview section:nth-of-type(odd) {
 	width: 52%;
 	padding-right: 6%;
-margin-top: 2.2em;
+margin-top: 1em;
 float: left}
 
 #overview section:nth-of-type(even) {
 	width: 38%;
-margin-top: 2.2em;
+margin-top: 1em;
 float: right;
 font-size: .9em;
-color: #676767}
+color: #676767;
+}
 
 #overview section:nth-of-type(even) h3 { 
 font-variant: small-caps;
@@ -223,19 +249,28 @@ color: #676767}
 
 #speakers {
 	background-color: #50347d;
-	overflow: auto
+	overflow: auto;
+	padding-top: 1.6em
 }
 
 #speakers > h2, #speakers > p {
 	color: #fff;
 	text-align: center;
-		padding-left: 24%;
-	width: 54%
+	padding-left: 24%;
+	width: 54%;
+}
 
+#speakers h2 {
+	font-size: 3em; 
 }
 
 #speakers > p {
-margin-bottom: 1em
+margin-bottom: 1.2em;
+font-size: .9em
+}
+
+#speakers > p:last-of-type {
+margin-bottom: 2.4em;	
 }
 
 
@@ -266,7 +301,7 @@ left: 5%;
 width: 95%;
 margin: 0 auto;
 font-size: 1em;
-font-size: 1.3vw;
+font-size: 1.5vw;
 line-height: 1.5
 }
 
@@ -292,7 +327,6 @@ display: inline-block;
 position: absolute;
 bottom: 4%;
 left: 5%;
-background-color: #000;
 color: #fff;
 width: 85%;
 margin: 0 auto;
@@ -300,6 +334,12 @@ font-family: "Freight-Micro-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-ser
 font-weight: 100;
 font-size: .9em;
 font-size: 1.1vw;
+}
+
+.session .name span {
+	background-color: #000;
+	padding: 0 2%
+	
 }
 
 .session:nth-of-type(1) .name, .session:nth-of-type(2) .name, .session:nth-of-type(3) .name{
@@ -349,7 +389,7 @@ width: 85%;
 	background-color: #fff;
 	overflow: visible;
 	margin: 5% 15%;
-	height: 70%;
+	height: 80%;
 	padding: 1%;
 	position: relative
 }
@@ -377,30 +417,41 @@ width: 85%;
 	height: 2em;
 	right: 2em;
 	z-index: 12;
-	padding: .2em 1em;
+	padding: .2em 1em .2em 2em;
 	text-transform: uppercase;
 	font-variant: small-caps;
 	color: #50347d;
 	font-size: .9em;
-	font-weight: 600
+	font-weight: 600;
+	background-image: url('../images/chrome/cross.svg');
+	background-position: 10% 35%;
+	background-repeat: no-repeat;
+	background-size: auto 40%;
+	cursor: pointer
 }
 
 
 .description h4 {
 	color: #e50252;
 	font-weight: 600;
-	font-size: 1.5em
+	font-size: 1.5em;
+	line-height: 1.1;
+	margin-bottom: .2em
 }
 
 .tags {
 display: none}
 
+.description p {
+	margin-bottom: .3em
+}
 
 
 .abstract {
 	width: 56%;
 	float: left;
-	margin-right: 4%
+	margin-right: 4%;
+	margin-bottom: .2em
 }
 
 .abstract p:last-of-type {margin-top: 1.5em}
@@ -429,13 +480,14 @@ display: none}
 /*pricing*/
 
 #register {
-margin-top: 2.5em
+margin-top: 3.5em;
+font-size: .9em
 }
 
 
 #register h2 {
-	font-size: 3em;
-	line-height: 1
+	font-size: 2.9em;
+	line-height: .96
 }
 
 #register table {
@@ -455,7 +507,7 @@ margin-top: 2.5em
 width: 23.3%;
 vertical-align: top;
 text-align: center;
-border-top: .5px solid #999;
+border-top: 1px solid #dedede;
 padding-top: 1.5%
 }
 
@@ -481,8 +533,13 @@ padding-top: 1.5%
 }
 
 #register h3 {
-	font-weight: 900;
-	font-size: 1.7em
+	font-weight: 600;
+	font-size: 1.7em;
+	margin-bottom: .2em;
+}
+
+#register p {
+	line-height: 1.25
 }
 
 #register td:nth-of-type(2) h3 {
@@ -512,7 +569,7 @@ padding-top: 1.5%
 }
 
 #register h4 {
-	color: #000;
+	color: 67675
 	text-transform: uppercase;
 	font-variant: small-caps;
 	font-weight: 600
@@ -520,14 +577,16 @@ padding-top: 1.5%
 
 
 #register td h4 {
-	color: #000;
 	text-transform: uppercase;
 	font-variant: small-caps;
-	font-weight: 400
+	font-weight: 600;
+	font-size: .9em;
+	color: #676767;
+	margin-bottom: .2em
 }
 
 #register td:nth-last-child(4) > h4 span {
-	color: #676767
+	color: #999
 }
 
 
@@ -545,6 +604,8 @@ padding-top: 1.5%
 	width: 1.4em
 }
 
+#register ul + ul + ul {margin-top: 2em}
+
 .more-info {
 font-weight: 100;
 }
@@ -552,12 +613,13 @@ font-weight: 100;
 #register td a:link, #register td a:visited {
 	text-decoration: none;
 	display: inline-block;
-	padding: .2em .5em;
+	padding: .2em .8em;
 	text-transform: uppercase;
 	font-variant: small-caps;
-	font-weight: 400;
-	border-radius: 3px;
-	color: #fff
+	font-weight: 500;
+	border-radius: 2px;
+	color: #fff;
+	font-size: .95em
 }
 
 #register td:nth-of-type(2) a:link, #register td:nth-of-type(2) a:visited {
@@ -574,9 +636,13 @@ font-weight: 100;
 }
 
 #register .current {
-font-size: 1.2em;
-font-weight: 400;
-color: #000}
+font-size: 1.1em;
+font-weight: 600;
+	color: #404040}
+	
+#register .current strong {
+	font-size: 1.2em
+}
 
 #register .price {
 	font-size: 1.3em;
@@ -588,7 +654,7 @@ color: #000}
 }
 
 #register li {
-	margin: -.4em 0 0 0;
+	margin: -.2em 0 0 0;
 	padding: 0 
 }
 
@@ -618,15 +684,15 @@ border-top: solid  rgb(215, 219, 226) 4px
 #workshop-details {width: 67%;
 float: left;
 border-top: solid  rgb(215, 219, 226) 4px;
-padding-top: 16px}
+padding-top: 16px;
+font-size: .9em;
+color: #676767}
 
 
 #workshop-details img {
-	
 	width: 20%;
 	float: right;
 	margin-left: 4%
-	
 }
 
 #workshop-takeaways {width: 30%;
@@ -659,15 +725,19 @@ float: right}
 	font-variant: small-caps;
 	text-transform: uppercase;
 	font-size: .9em;
-	color: #000
+	color: #404040
 }
 
 /*pricing more*/
 
 #pricing-more {
-	margin-top: 3em
+	margin-top: 3em;
 }
 
+#pricing-more > section{
+	font-size: .9em;
+	color: #676767
+}
 #pricing-more h2 {
 	margin-left: 0;
 	margin-right: 20px;
@@ -681,7 +751,7 @@ float: right}
 	color:#e50252
 }
 
-register .more-info {
+#register .more-info {
 	display: none
 }
 
@@ -708,13 +778,10 @@ register .more-info {
 }
 
 #pricing-more  li {
-	line-height: 1.1;
+	line-height: 1.25;
 	margin-bottom: 1em
 }
 
-#register p {
-	line-height: 1.1
-}
 
 #pricing-more strong {
 	font-variant: small-caps;
@@ -743,6 +810,21 @@ register .more-info {
 	color: #fff
 }
 
+#venue p {
+		font-size: .9em;
+}
+
+#venue h3 {
+	font-variant: small-caps;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: .75em;
+	line-height: 1.1
+}
+
+#venue h3 + p {
+	margin-top: 0
+}
 /*about*/
 
 #about {	
@@ -774,16 +856,17 @@ register .more-info {
 }
 
 #partner-details {
-	width: 30%;
+	width: 26%;
 	float: left
 }
 
 #our-partners {
-	width: 64%;
-	float: right
+	width: 70%;
+	float: right;
+	margin-bottom: 4em
 }
 
-.major-partner img {
+#our-partners .major-partner img {
 	width: 50%
 }
 
@@ -796,38 +879,69 @@ register .more-info {
 }
 
 .community-partner {
-	width: 20%;
+	width: 16%;
 	float: left;
 	margin-right: 13%
 }
+
+
+/*code of conduct*/
+
+#code {
+	background-color: #3E236A;
+	color: #fff;
+	padding: 2em 25%;
+	text-align: center
+}
+
+#code h2 {
+	color: #fff}
 
 /*footer*/
 
 footer {
 	font-size: .9em;
-	color: #676767;
+	color: #999;
+	background-color: #202020;
 	width: 84%;
-	margin: 3em 8% 0 8%;
+	padding: 3em 8% 0 8%;
+	overflow: hidden
+}
+
+footer #credits {
+	float: none;
+	width: 50%;
+	padding: 0 25%;
+	margin-bottom: 6em;
+	text-align: center
 }
 
 footer > section {
-	width: 56%;
-	float: right
+
 }
 
-footer > section:first-of-type {
-	width: 40%;
+footer > section:nth-of-type(2), footer > section:nth-of-type(3) {
+	width: 25%;
 	float: left
+}
+
+footer > section:nth-of-type(3) {
+	float: right;
+	margin-bottom: 6em
 }
 
 footer h3 {
 	font-variant: small-caps;
 	text-transform: uppercase;
 	font-size: inherit;
-	font-weight: 500
+	font-weight: 500;
+	color: #999
 }
 
 footer > p {
 	clear: both;
-	margin: 2em 0 0 0
+	width: 50%;
+	padding: 0 25%;
+	margin-bottom: 2em;
+	text-align: center
 }
