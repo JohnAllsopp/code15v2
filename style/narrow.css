@@ -10,12 +10,19 @@ em {
 
 h1, h2 {
 font-family: "Freight-Micro-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
-font-size: 3em;
+font-size: 2.6em;
 font-weight: 300;
 line-height: 1.1;
 }
 
-h2 {margin: 1.5em 0 .5em 0}
+h2 {margin: 1.5em 0 .5em 0;
+line-height: 1}
+
+h3 {
+	font-variant: small-caps;
+	text-transform: uppercase;
+	font-size: 1.1em
+}
 
 h1, h2, h3, h4, h5, h6 {
 color: #50347d
@@ -71,7 +78,7 @@ background-size: cover
 
 header h1 {
 font-size: 11em;
-font-size: 30vw;
+font-size: 36vw;
 color: #fff;
 text-align: center;
 font-weight: 100}
@@ -88,11 +95,13 @@ margin-left: .05em}
 
 header h2 {
 font-size: 2.2em;
-font-size: 6vw;
+font-size: 8vw;
 color: #fff;
 text-align: center;
 font-family: "Freight-Sans-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
-line-height: 1.1
+line-height: 1.1;
+margin-top: 1em;
+margin-bottom:0
 }
 
 header h2 strong {
@@ -100,7 +109,7 @@ font-weight: 900}
 
 header h3 {
 font-size: 1.3em;
-font-size: 3.2vw;
+font-size: 5vw;
 color: #fff;
 text-align: center;
 font-family: "Freight-Sans-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
@@ -119,7 +128,7 @@ nav.page {
 
 nav.page li {
 display: inline-block;
-width: 23%;
+width: 30%;
 text-align: right}
 
 nav.page li:first-child {
@@ -150,7 +159,7 @@ background-color: red;
 margin-left: .05em}*/
 
 
-nav.page li:nth-of-type(2) {
+nav.page li:nth-of-type(2), nav.page li:nth-of-type(4) {
 	display: none
 }
 
@@ -223,7 +232,8 @@ margin-top: 1.2em;
 	font-family: "Freight-Micro-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
 	font-size: 1.6em;
 	margin-top: 1em;
-	line-height: 1.1
+	line-height: 1.1;
+	clear: both
 }
 
 .bio > img {
@@ -359,6 +369,10 @@ color: #000}
 	width: 70%
 }
 
+.exhibitor img {
+	width: 40%
+}
+
 #our-partners h3 {
 	font-variant: small-caps;
 	text-transform: uppercase;
@@ -382,7 +396,7 @@ color: #000}
 #code {
 	background-color: #3E236A;
 	color: #fff;
-	padding: 2em 25%;
+	padding: 2em 15%;
 	text-align: center
 }
 

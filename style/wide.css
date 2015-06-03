@@ -34,7 +34,7 @@ nav#site ul li{
 	display: inline-block;
 	width: auto;
 	margin-right: 1em;
-	font-weight: 500
+	font-weight: 500;
 }
 
 nav#site ul li:first-of-type {
@@ -72,7 +72,8 @@ nav#site ul li.current:after {
 	z-index: 10;
 	left: 0;
 	content: ' ';
-	-webkit-transform: translateX(10px) rotate(45deg)
+	-webkit-transform: translateX(10px) rotate(45deg);
+	transform: translateX(10px) rotate(45deg)
 }
 
 /*header*/
@@ -88,7 +89,7 @@ background-size: 100% auto
 
 header h1 {
 font-size: 10em;
-font-size: 24vw;
+font-size: 28vw;
 color: #fff;
 text-align: center;
 font-weight: 100;
@@ -138,11 +139,14 @@ nav.page {
 
 nav.page li {
 display: inline-block;
-width: 9%;
-text-align: right}
+max-width: 8%;
+text-align: right;
+margin-right: 1%}
 
 nav.page li:first-child {width: 60%;
+max-width: 60%;
 text-align: left;
+margin-right: 1%;
 }
 
 nav.page a:link, nav.page a:visited {
@@ -286,7 +290,29 @@ margin-bottom: 2.4em;
 	display: block;
 	width: 20%;
 	float: left;
-	background-color: #50347d}
+	background-color: #50347d;
+	cursor: pointer}
+	
+.session.platform, .session.platform.js {
+	width: 16.66%;
+
+}
+	
+.session:after{
+	content: "+";
+	position: absolute;
+	right: 2%;
+	bottom: 4%;
+	width: 18px;
+	height: 18px;
+	text-align: center; 
+	line-height: 16px;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: helvetica;
+	color: white;
+	opacity: .9;
+}
 
 .session img {
 width: 100%}
@@ -535,9 +561,10 @@ padding-top: 1.5%
 }
 
 #register h3 {
-	font-weight: 600;
+	font-weight: 900;
 	font-size: 1.7em;
 	margin-bottom: .2em;
+	font-family: "Freight-Micro-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
 }
 
 #register p {
@@ -734,6 +761,7 @@ float: right}
 
 #pricing-more {
 	margin-top: 3em;
+	overflow: hidden
 }
 
 #pricing-more > section{
@@ -762,17 +790,20 @@ float: right}
 	float: left;
 	padding-top: 20px;
 	border-top: solid  #e50252 4px;
+	margin-bottom: 3%
 }
 
 #pricing-eofy {
-	margin-left: 3%
+	margin-left: 3%;
+
 }
 
 #pricing-more h3 {
 	font-family: "Freight-Micro-Pro", "Helvetica Neue",  Helvetica, Arial,  sans-serif;
-	font-size: 1.6em;
+	font-size: 1.7em;
 	color: #e50252;
-		padding-bottom: 1em;
+	padding-bottom: 1em;
+	font-weight: 900
 }
 
 #pricing-more  li:before {
@@ -853,6 +884,10 @@ float: right}
 
 /*partners*/
 
+#our-partners  > section {
+	margin-left: 5%
+}
+
 #our-partners img {
 	width: 100%
 }
@@ -872,12 +907,16 @@ float: right}
 	width: 50%
 }
 
+#our-partners .exhibitor img {
+	width:30%
+}
+
 #our-partners h3 {
 	font-variant: small-caps;
 	text-transform: uppercase;
 	font-size: .9em;
 	color: #676767;
-	margin-bottom: .6em
+	margin: 1.6em 0
 }
 
 .community-partner {
